@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import SpeedDials from "./Components/SpeedDials";
+import SocialIcons from "./Components/SocialIcons";
+import "./App.css";
+import BackgroundAnimation from "./Components/BackgroundAnimation";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="context">
+        <div className="container">
+          <h1 className="mt-2 mb-1">Hey, I'm Priyadharshan</h1>
+          <p className="mb-2">a web developer </p>
+          <p>Swipe to know more about me! </p>
+          <SocialIcons />
+        </div>
+      </div>
+      <BackgroundAnimation />
     </div>
   );
 }
