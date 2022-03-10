@@ -5,12 +5,12 @@
   padding: 0px;
   box-sizing: border-box;
   list-style: none;
-  color: #fff;
+  color: var(--secondary-white-color);
   text-decoration: none;
 }
 :root {
-  --primary-color: #4e54c8;
-  --secondary-color: #8f94fb;
+  --primary-green-color: rgb(18, 202, 202);
+  --secondary-white-color: #f1f1f1;
 }
 body {
   font-family: "Exo", sans-serif;
@@ -33,46 +33,61 @@ body {
 .mb-2 {
   margin-bottom: 2rem;
 }
+/* Social Icons */
+.icon {
+  margin-bottom: 1rem;
+  /* display: none; */
+}
+#hover-icon {
+  display: block;
+}
+i.fab,
+i.fa {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 1px 2px 2px #888;
+  background-color: transparent;
+  color: var(--secondary-white-color);
+  padding: 0.3em 0.4em;
+  /* padding : 0.5em  0.6em is the default value*/
+  opacity: 0.9;
+}
+button {
+  background-color: inherit;
+  border: none;
+}
+i.fa:hover,
+i.fa:focus,
+i.fab:hover {
+  background-color: #111;
+  color: var(--primary-green-color);
+  transition: ease-in 0.35s;
+  opacity: 0.8;
+  cursor: pointer;
+}
 .container {
   width: 90%;
   max-width: 1200px;
   margin: auto;
   position: relative;
 }
-/* Social Icons */
 .social-icon-container {
+  display: block;
   position: absolute;
   z-index: 1;
   right: 0%;
   top: 0%;
 }
-.icon {
-  margin-bottom: 1rem;
-}
-.icon i {
-  color: var(--primary-color);
-}
-i.fab {
-  display: inline-block;
-  border-radius: 60px;
-  box-shadow: 0px 0px 2px #888;
-  background-color: transparent;
-  color: white;
-  padding: 0.3em 0.4em;
-  /* padding : 0.5em  0.6em is the default value*/
-  opacity: 0.8;
-}
-i.fab:hover {
-  background-color: #3942ee;
-  color: white;
-  opacity: 1;
+.social-icon-container > #hover-icon:focus ~ .icon {
+  display: block;
 }
 /*introduction*/
 .context {
   width: 100%;
   position: absolute;
-  color: #fff;
-  font-size: 1.3rem;
+  color: #f0f0f0;
+  font-size: 1.2rem;
+  z-index: 1;
 }
 .context h1 {
   font-size: 2.7rem;
@@ -81,8 +96,7 @@ i.fab:hover {
 
 /*background animation*/
 .area {
-  background: var(--primary-color);
-  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  background: linear-gradient(to left, rgb(18, 202, 202), black);
   width: 100%;
   height: 100vh;
 }

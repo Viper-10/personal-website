@@ -1,4 +1,3 @@
-import SpeedDials from "./Components/SpeedDials";
 import SocialIcons from "./Components/SocialIcons";
 import "./App.css";
 import BackgroundAnimation from "./Components/BackgroundAnimation";

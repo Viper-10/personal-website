@@ -1,6 +1,5 @@
 const Icon = (props) => {
   const { faIcon, url } = props;
-
   return (
     <div className="icon">
       <a href={url} target="_blank">

@@ -1,15 +1,45 @@
+import { useEffect, useState } from "react";
 import Icon from "./Icon";
 import profiles from "../profiles.json";
-import { useEffect, useState } from "react";
 
 const SocialIcons = () => {
-  const [profileList, setProfileList] = useState([profiles]);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [visible, setVisible] = useState(false);
 
-  const allIcons = profiles.map((iconInfo, index) => (
-    <Icon key={iconInfo.index} faIcon={iconInfo.faIcon} url={iconInfo.url} />
-  ));
+  const allIcons = profiles.map((iconInfo, index) => {
+    return <Icon key={index} faIcon={iconInfo.faIcon} url={iconInfo.url} />;
+  });
 
-  return <div className="social-icon-container mt-1">{allIcons}</div>;
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    // whenever the page resizes the event listener is run
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const onClickHoverIcon = () => {
+    setVisible(!visible);
+  };
+  const hoverIcon = (
+    <div className="icon" id="hover-icon">
+      <i className="fa fa-plus" onClick={onClickHoverIcon} />
+    </div>
+  );
+
+  return (
+    <div className="device-filter">
+      <div className="social-icon-container mt-1">
+        {windowWidth < 900 && hoverIcon}
+        {(windowWidth >= 900 || visible) && allIcons}
+      </div>
+    </div>
+  );
 };
 
 export default SocialIcons;
