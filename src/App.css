@@ -34,13 +34,6 @@ body {
   margin-bottom: 2rem;
 }
 /* Social Icons */
-.icon {
-  margin-bottom: 1rem;
-  /* display: none; */
-}
-#hover-icon {
-  display: block;
-}
 i.fab,
 i.fa {
   display: inline-block;
@@ -51,10 +44,6 @@ i.fa {
   padding: 0.3em 0.4em;
   /* padding : 0.5em  0.6em is the default value*/
   opacity: 0.9;
-}
-button {
-  background-color: inherit;
-  border: none;
 }
 i.fa:hover,
 i.fa:focus,
@@ -71,16 +60,6 @@ i.fab:hover {
   margin: auto;
   position: relative;
 }
-.social-icon-container {
-  display: block;
-  position: absolute;
-  z-index: 1;
-  right: 0%;
-  top: 0%;
-}
-.social-icon-container > #hover-icon:focus ~ .icon {
-  display: block;
-}
 /*introduction*/
 .context {
   width: 100%;
@@ -92,6 +71,14 @@ i.fab:hover {
 .context h1 {
   font-size: 2.7rem;
 }
+.social-icon-container {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  right: 0%;
+  top: 0%;
+}
+
 /* slides */
 
 /*background animation*/

@@ -5,11 +5,6 @@ import profiles from "../profiles.json";
 const SocialIcons = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [visible, setVisible] = useState(false);
-
-  const allIcons = profiles.map((iconInfo, index) => {
-    return <Icon key={index} faIcon={iconInfo.faIcon} url={iconInfo.url} />;
-  });
-
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
   };
@@ -23,11 +18,15 @@ const SocialIcons = () => {
     };
   }, []);
 
+  const allIcons = profiles.map((iconInfo, index) => {
+    return <Icon key={index} faIcon={iconInfo.faIcon} url={iconInfo.url} />;
+  });
+
   const onClickHoverIcon = () => {
     setVisible(!visible);
   };
   const hoverIcon = (
-    <div className="icon" id="hover-icon">
+    <div className="icon mb-1" id="hover-icon">
       <i className="fa fa-plus" onClick={onClickHoverIcon} />
     </div>
   );
