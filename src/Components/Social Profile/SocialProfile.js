@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import Icon from "./Icon";
-import profiles from "../profiles.json";
-
-const SocialIcons = () => {
+import profiles from "../../profiles.json";
+import "./style.css";
+const SocialProfile = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [visible, setVisible] = useState(false);
+  const [socialIconsVisible, setSocialIconsVisible] = useState(false);
+
+  let hoverIconStyle;
+
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
   };
@@ -23,22 +26,27 @@ const SocialIcons = () => {
   });
 
   const onClickHoverIcon = () => {
-    setVisible(!visible);
+    setSocialIconsVisible(!socialIconsVisible);
   };
+
+  if (socialIconsVisible) {
+    hoverIconStyle = "fa fa-plus rotate-45";
+  } else {
+    hoverIconStyle = "fa fa-plus";
+  }
+
   const hoverIcon = (
     <div className="icon mb-1" id="hover-icon">
-      <i className="fa fa-plus" onClick={onClickHoverIcon} />
+      <i className={hoverIconStyle} onClick={onClickHoverIcon} />
     </div>
   );
 
   return (
-    <div className="device-filter">
-      <div className="social-icon-container mt-1">
-        {windowWidth < 900 && hoverIcon}
-        {(windowWidth >= 900 || visible) && allIcons}
-      </div>
+    <div className="social-icon-container">
+      {windowWidth < 1024 && hoverIcon}
+      {(windowWidth >= 1024 || socialIconsVisible) && allIcons}
     </div>
   );
 };
 
-export default SocialIcons;
+export default SocialProfile;

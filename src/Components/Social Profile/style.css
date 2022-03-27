@@ -1,0 +1,36 @@
+i.fab,
+i.fa {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 1px 2px 2px #888;
+  background-color: transparent;
+  color: var(--secondary-white-color);
+  padding: 0.3em 0.4em;
+  /* padding : 0.5em  0.6em is the default value*/
+  opacity: 0.9;
+}
+@media (min-width: 768px) {
+  i.fa:hover,
+  i.fab:hover {
+    background-color: #111;
+    color: var(--primary-green-color);
+    transition: ease-in 0.35s;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+i.fa:active {
+  background-color: #111;
+  transition: ease-in 0.35s;
+  opacity: 0.8;
+}
+.social-icon-container {
+  display: block;
+  position: absolute;
+  margin-top: 4rem;
+  right: 0%;
+  top: 0%;
+}
+.rotate-45 {
+  transform: rotate(45deg);
+}

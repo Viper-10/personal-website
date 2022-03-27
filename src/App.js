@@ -1,15 +1,16 @@
-import SocialIcons from "./Components/SocialIcons";
 import "./App.css";
-import BackgroundAnimation from "./Components/BackgroundAnimation";
+import BackgroundAnimation from "./Components/BackgroundAnimation/BackgroundAnimation.js";
+import Introduction from "./Components/Introduction/Introduction";
+import Navbar from "./Components/Navbar/Navbar";
+import SocialProfile from "./Components/Social Profile/SocialProfile";
 function App() {
   return (
     <div className="App">
       <div className="context">
         <div className="container">
-          <h1 className="mt-2 mb-1">Hey, I'm Priyadharshan</h1>
-          <p className="mb-2">a web developer </p>
-          <p>Swipe to know more about me! </p>
-          <SocialIcons />
+          <Navbar />
+          <Introduction />
+          <SocialProfile />
         </div>
       </div>
       <BackgroundAnimation />
