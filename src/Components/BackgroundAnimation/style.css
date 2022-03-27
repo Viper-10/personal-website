@@ -1,8 +1,7 @@
-/*background animation*/
 .area {
   background: linear-gradient(to left, rgb(18, 202, 202), black);
   width: 100%;
-  height: 100vh;
+  height: 250vh;
 }
 
 .circles {
@@ -10,7 +9,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 250vh;
   overflow: hidden;
 }
 
@@ -108,7 +107,7 @@
   }
 
   100% {
-    transform: translateY(-1000px) rotate(720deg);
+    transform: translateY(-2000px) rotate(720deg);
     opacity: 0;
     border-radius: 50%;
   }

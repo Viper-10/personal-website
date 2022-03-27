@@ -6,11 +6,6 @@
   color: var(--secondary-white-color);
   text-decoration: none;
 }
-@media (max-width: 769px) {
-  * {
-    font-size: 16px;
-  }
-}
 :root {
   --primary-green-color: rgb(18, 202, 202);
   --secondary-white-color: #f1f1f1;
@@ -43,4 +38,22 @@
   color: #f0f0f0;
   font-size: 1.2rem;
   z-index: 1;
+}
+
+.heading {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-family: "Ink Free", "Roboto Mono", Times, serif;
+  color: var(--primary-green-color);
+}
+
+@media (max-width: 769px) {
+  * {
+    font-size: 16px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
 }

@@ -1,0 +1,29 @@
+.about {
+  max-width: 800px;
+}
+
+.about h2 {
+  font-family: "Comic Sans MS", Times, serif;
+  font-size: 1.6rem;
+  font-style: italic;
+}
+.about p {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+  font-size: 0.9rem;
+  line-height: 1.6em;
+}
+.description {
+  margin-top: 1rem;
+}
+@media (max-width: 1024px) {
+  .about {
+    max-width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    max-width: 300px;
+    font-size: 1rem;
+  }
+}

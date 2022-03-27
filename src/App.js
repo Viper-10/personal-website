@@ -1,16 +1,13 @@
-import "./App.css";
 import BackgroundAnimation from "./Components/BackgroundAnimation/BackgroundAnimation.js";
-import Introduction from "./Components/Introduction/Introduction";
-import Navbar from "./Components/Navbar/Navbar";
-import SocialProfile from "./Components/Social Profile/SocialProfile";
+import Home from "./Pages/Home/Home";
+import "./App.css";
+
 function App() {
   return (
     <div className="App">
       <div className="context">
         <div className="container">
-          <Navbar />
-          <Introduction />
-          <SocialProfile />
+          <Home />
         </div>
       </div>
       <BackgroundAnimation />
