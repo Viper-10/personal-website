@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "icon1",
+    "title": "Frontend",
+    "description": "Love to work with React js and CSS3. Worked in real time projects as frontend developer."
+  },
+  {
+    "icon": "icon2",
+    "title": "Backend",
+    "description": "Mostly used in spring boot and java. Worked with MySQL database. Restful API development."
+  },
+  {
+    "icon": "Others",
+    "title": "Github",
+    "description": "Have used github for professional work and personal projects. Used to jira as a project management tool "
+  }
+]

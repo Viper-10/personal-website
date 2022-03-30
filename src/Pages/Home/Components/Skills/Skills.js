@@ -1,14 +1,23 @@
 import "./style.css";
-import Skill from "./Skill/Skill.js";
-import mySkills from "./skills.json";
+import Toggle from "./Toggle/Toggle";
+import { useState } from "react";
+import SkillBars from "./SkillBars/SkillBars";
+import TechStack from "./TechStack/TechStack";
 const Skills = () => {
-  const skills = mySkills.map((skill) => {
-    return <Skill key={skill.text} skill={skill} />;
-  });
+  const [toggle, setToggle] = useState(false);
+
+  const handleClick = () => {
+    console.log("clicked");
+    setToggle(!toggle);
+  };
+
   return (
     <div className="skills">
-      <h1 className="heading"> Skills</h1>
-      <div className="grid-split-two">{skills}</div>
+      <div className="flex">
+        <h1 className="heading">{toggle ? "Skills" : "Stack"} </h1>
+        <Toggle handleClick={handleClick} toggle={toggle} />
+      </div>
+      {toggle ? <SkillBars /> : <TechStack />}
     </div>
   );
 };

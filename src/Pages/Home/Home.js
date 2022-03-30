@@ -12,7 +12,6 @@ const Home = () => {
       <Skills />
       <WorkExperience />
       <Education />
-
       <SocialProfile />
     </>
   );

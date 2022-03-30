@@ -1,0 +1,12 @@
+.card {
+  height: 70vh;
+  background-color: rgb(107, 172, 172);
+  color: black;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+h2 {
+  color: black;
+  font-style: italic;
+}
