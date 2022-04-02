@@ -1,16 +1,19 @@
 [
   {
-    "icon": "icon1",
+    "src": "ReactLogo.png",
+    "alt": "React Logo",
     "title": "Frontend",
-    "description": "Love to work with React js and CSS3. Worked in real time projects as frontend developer."
+    "description": "Love to work with React js and CSS3. Worked in real time projects as a frontend developer.I've used JEST to test my code."
   },
   {
-    "icon": "icon2",
+    "src": "SpringbootLogo.png",
+    "alt": "Springboot Logo",
     "title": "Backend",
-    "description": "Mostly used in spring boot and java. Worked with MySQL database. Restful API development."
+    "description": "Mostly experienced in spring boot and java. Worked with MySQL database and Junit tests. Restful API development."
   },
   {
-    "icon": "Others",
+    "src": "GithubLogo.png",
+    "alt": "Github Logo",
     "title": "Github",
     "description": "Have used github for professional work and personal projects. Used to jira as a project management tool "
   }

@@ -7,7 +7,6 @@ const Skills = () => {
   const [toggle, setToggle] = useState(false);
 
   const handleClick = () => {
-    console.log("clicked");
     setToggle(!toggle);
   };
 

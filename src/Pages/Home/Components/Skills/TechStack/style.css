@@ -1,14 +1,17 @@
-.cards > * {
-  width: 200px;
+.cards > .card {
+  flex: 1;
 }
-
+.cards {
+  margin-inline: 1.75rem;
+  margin-top: 2rem;
+}
 @media (min-width: 769px) {
   .cards {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2rem;
     gap: 2rem;
     justify-content: center;
-    margin-inline: auto;
+    max-width: 800px;
+    margin-inline: 3rem;
   }
 }

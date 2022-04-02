@@ -6,8 +6,10 @@ const Introduction = () => {
       <p className="description">
         I'm a cs student (2019-2023), a full stack web developer based in India.
         I've worked with real time projects as a react js developer. I have
-        experience with web applications that are used in the real world.
-        <br />I love to listen to music and watch movies.
+        experience in managing web applications.
+        <br />
+        <br />I have a keen interest in web development and I'm always looking
+        for new challenges.
       </p>
     </div>
   );
