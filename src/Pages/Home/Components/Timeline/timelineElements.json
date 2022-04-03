@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Developer",
+    "workplace": "Janus Softwares",
+    "location": "- Thane, Maharashtra",
+    "description": "Working as a React js developer. Work on the second UI version of SpiritSwap blockchain project",
+    "date": "March 2022 - Present",
+    "type": "work"
+  },
+  {
+    "id": 2,
+    "title": "BE Computer Science",
+    "workplace": "Kumaraguru College of Technology",
+    "location": "- Coimbatore, Tamil Nadu",
+    "description": "Currently Pursuing 3rd year of BE CSE with a CGPA of 9.5 out of 10. Innovation Coordinator of DA CSE(2020-2021). Winner of CODEFIESTA(2020)",
+    "date": "September 2019",
+    "type": "school"
+  },
+  {
+    "id": 3,
+    "title": "12th Grade",
+    "workplace": "Amrita Vidyalayam",
+    "location": "Coimbatore, Tamil Nadu",
+    "description": "Completed my 12th grade with 66% in the CBSE",
+    "date": "June 2018 - March 2019",
+    "type": "school"
+  },
+  {
+    "id": 4,
+    "title": "10th Grade",
+    "workplace": "Amrita Vidyalayam",
+    "location": "Coimbatore, Tamil Nadu",
+    "description": "Completed my 10th grade with 10/10 GPA in the CBSE",
+    "date": "June 2016 - March 2017",
+    "type": "school"
+  }
+]

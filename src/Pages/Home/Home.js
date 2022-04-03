@@ -1,17 +1,13 @@
 import About from "./Components/About/About";
 import SocialProfile from "./Components/Social Profile/SocialProfile";
-import Navbar from "./Components/Navbar/Navbar";
 import Skills from "./Components/Skills/Skills";
-import WorkExperience from "./Components/WorkExperience/WorkExperience";
-import Education from "./Components/Education/Education";
+import Timeline from "./Components/Timeline/Timeline";
 const Home = () => {
   return (
     <>
-      {/* <Navbar /> */}
       <About />
+      <Timeline />
       <Skills />
-      <WorkExperience />
-      <Education />
       <SocialProfile />
     </>
   );

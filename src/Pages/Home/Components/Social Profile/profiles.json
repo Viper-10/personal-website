@@ -2,7 +2,7 @@
   {
     "network": "Google",
     "username": "priyadharshanbeepee@gmail.com",
-    "url": "priyadharshanbeepee@gmail.com",
+    "url": "mailto:priyadharshanbeepee@gmail.com",
     "faIcon": "fab fa-google"
   },
   {
@@ -16,6 +16,12 @@
     "username": "Viper-10",
     "url": "https://github.com/Viper-10",
     "faIcon": "fab fa-github"
+  },
+  {
+    "network": "Discord",
+    "username": "Viper-10",
+    "url": "https://discord.com/users/Viper-10",
+    "faIcon": "fab fa-discord"
   },
   {
     "network": "Instagram",

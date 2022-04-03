@@ -3,13 +3,13 @@ const Skill = ({ skill }) => {
   const barStyle = {
     width: "300px",
     height: "5px",
-    backgroundColor: "white",
+    backgroundColor: "rgba(255,255,255,0.3)",
     borderRadius: "5px",
   };
   const barFiller = {
     width: `${skill.percent}%`,
     height: "100%",
-    backgroundColor: "#12caca",
+    backgroundColor: "rgb(1, 74, 52)",
   };
   return (
     <div className="mb-1">

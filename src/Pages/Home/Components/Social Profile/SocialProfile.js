@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Icon from "./Icon";
-import profiles from "../../../../profiles.json";
+import profiles from "./profiles.json";
 import "./style.css";
 const SocialProfile = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);

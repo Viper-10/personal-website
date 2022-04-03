@@ -1,10 +1,25 @@
 import "./style.css";
+import GithubLogo from "./GithubLogo.svg";
+import ReactLogo from "./ReactLogo.svg";
+import SpringbootLogo from "./SpringbootLogo.svg";
+
 const Card = ({ card }) => {
-  const path = "/src/assets/";
-  console.log(path + card.src);
+  let src = GithubLogo;
+
+  if (card.title === "Frontend") {
+    src = ReactLogo;
+  } else if (card.title === "Backend") {
+    src = SpringbootLogo;
+  }
   return (
     <div className="card">
-      <img src={path + card.src} alt={card.alt} />
+      <img
+        src={src}
+        alt={card.alt}
+        width="200px"
+        height="100px"
+        className="svg-style"
+      />
       <h2 className="card-title">{card.title}</h2>
       <div className="card-description">{card.description}</div>
     </div>

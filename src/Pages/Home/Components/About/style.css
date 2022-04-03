@@ -8,9 +8,9 @@
   font-style: italic;
 }
 .about p {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 100;
-  font-size: 0.9rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1rem;
   line-height: 1.6em;
 }
 .description {
@@ -25,5 +25,9 @@
   .about {
     max-width: 300px;
     font-size: 1rem;
+  }
+
+  .about p {
+    font-weight: 600;
   }
 }
