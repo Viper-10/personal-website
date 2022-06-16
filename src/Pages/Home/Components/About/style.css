@@ -1,9 +1,10 @@
-.about .heading {
-  background: -webkit-linear-gradient(#eee, #555);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.my-name {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  /* font-family: "Lobster", cursive; */
+  font-size: 3.5rem;
+  margin-top: 100px;
 }
-
 .about {
   max-width: 800px;
 }
@@ -21,6 +22,14 @@
 .description {
   margin-top: 1rem;
 }
+
+@media (min-width: 1024px) {
+  .my-name {
+    background: -webkit-linear-gradient(#eee, #555);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 @media (max-width: 1024px) {
   .about {
     max-width: 600px;
@@ -34,5 +43,11 @@
 
   .about p {
     font-weight: 600;
+  }
+}
+
+@media (max-width: 769px) {
+  .my-name {
+    font-size: 2rem;
   }
 }

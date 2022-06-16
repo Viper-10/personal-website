@@ -1,0 +1,12 @@
+[
+  {
+    "name": "QuoteAway",
+    "link": "https://quoteaway.herokuapp.com/#/",
+    "description": "A web application that allows users to create and share quotes.Built using React js and Spring boot. Uses MySQL as the database and is deployed on Heroku"
+  },
+  {
+    "name": "Bank Application",
+    "link": "TODO:",
+    "description": "A web application that imitates bank operations such as deposit, withdraw, transfer and balance enquiry, fixed deposit and loans. Involes multithreading concepts and built using Jax-rs primarily and Angular."
+  }
+]
