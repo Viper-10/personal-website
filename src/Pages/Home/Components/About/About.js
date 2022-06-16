@@ -1,12 +1,12 @@
 import "./style.css";
-const Introduction = () => {
+const About = () => {
   return (
     <div className="about">
       <h1 className="heading">Hey! I'm Priyadharshan</h1>
       <p className="description">
-        I'm a cs student, a web developer based in India. I've worked with real
-        time projects as a react js developer. I have a keen interest in web
-        development and Problem solving.
+        I'm a web developer based in India. Experienced in React js, Typescript.
+        Worked with Spring boot, hibernate and Jax-rs for backend development.I
+        also have a keen interest in problem solving and web3.
       </p>
       <br />
       <p className="description">
@@ -16,4 +16,4 @@ const Introduction = () => {
   );
 };
 
-export default Introduction;
+export default About;

@@ -1,7 +1,12 @@
+.about .heading {
+  background: -webkit-linear-gradient(#eee, #555);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .about {
   max-width: 800px;
 }
-
 .about h2 {
   font-family: "Comic Sans MS", Times, serif;
   font-size: 1.6rem;

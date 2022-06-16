@@ -1,14 +1,12 @@
 .card {
-  background-image: linear-gradient(
-    to right,
-    var(--primary-green-color),
-    rgba(0, 0, 0, 0.6)
-  );
+  background-image: linear-gradient(to right, rgb(26, 137, 105) 80%, #111);
   opacity: 0.7;
   border-radius: 15px;
   margin-bottom: 20px;
   text-align: center;
   padding: 1.5rem;
+  border: 1px solid black;
+  box-shadow: 2px 10px 2px 0px #111;
 }
 .card-title {
   /* color: rgb(6, 194, 141); */
@@ -23,6 +21,7 @@
     "Lucida Sans", Arial, sans-serif;
   line-height: 1.4em;
   margin-block: 1rem;
+  font-weight: bold;
 }
 /* .svg-style {
   filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)

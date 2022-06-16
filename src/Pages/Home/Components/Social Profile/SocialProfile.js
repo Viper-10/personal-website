@@ -13,7 +13,6 @@ const SocialProfile = () => {
   };
 
   useEffect(() => {
-    // whenever the page resizes the event listener is run
     window.addEventListener("resize", handleResize);
 
     return () => {

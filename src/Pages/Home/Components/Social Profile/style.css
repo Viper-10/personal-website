@@ -13,7 +13,7 @@ i.fa {
   i.fab:hover {
     background-color: #111;
     color: var(--primary-yellow-color);
-    transition: ease-in 0.35s;
+    transition: ease-in 0.2s;
     opacity: 0.8;
     cursor: pointer;
   }

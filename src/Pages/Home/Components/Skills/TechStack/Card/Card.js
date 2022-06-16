@@ -1,20 +1,19 @@
 import "./style.css";
-import GithubLogo from "./GithubLogo.svg";
-import ReactLogo from "./ReactLogo.svg";
-import SpringbootLogo from "./SpringbootLogo.svg";
+import GithubLogo from "./github.svg";
+import ReactLogo from "./react.svg";
+import JavaLogo from "./java.svg";
 
 const Card = ({ card }) => {
-  let src = GithubLogo;
+  const imageSrc = {
+    Frontend: ReactLogo,
+    Backend: JavaLogo,
+    Github: GithubLogo,
+  };
 
-  if (card.title === "Frontend") {
-    src = ReactLogo;
-  } else if (card.title === "Backend") {
-    src = SpringbootLogo;
-  }
   return (
     <div className="card">
       <img
-        src={src}
+        src={imageSrc[card.title]}
         alt={card.alt}
         width="200px"
         height="100px"

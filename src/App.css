@@ -47,7 +47,10 @@
   margin-bottom: 1rem;
   font-size: 3rem;
   font-family: "Ink Free", "Roboto Mono", Times, serif;
-  color: var(--primary-yellow-color);
+  /* color: var(--primary-yellow-color); */
+  background: -webkit-linear-gradient(#eee, #555);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 ::-webkit-scrollbar {
