@@ -1,15 +1,7 @@
+import { imageSrc } from ".";
 import "./style.css";
-import GithubLogo from "./github.svg";
-import ReactLogo from "./react.svg";
-import JavaLogo from "./java.svg";
 
 const Card = ({ card }) => {
-  const imageSrc = {
-    Frontend: ReactLogo,
-    Backend: JavaLogo,
-    Github: GithubLogo,
-  };
-
   return (
     <div className="card">
       <img

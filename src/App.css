@@ -49,8 +49,7 @@
   font-family: "Lobster", cursive;
   letter-spacing: 0.25rem;
   /* font-family: "Ink Free", "Roboto Mono", Times, serif; */
-  /* color: var(--primary-yellow-color); */
-  background: -webkit-linear-gradient(#eee, #555);
+  background: -webkit-linear-gradient(#c59014 60%, rgb(69, 69, 1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

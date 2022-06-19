@@ -1,11 +1,12 @@
 import Project from "./Project/Project";
 import projects from "./projects.json";
+import "./style.css";
 
 const Projects = () => {
   return (
-    <div class="project">
-      <div class="heading">Project</div>
-      <div class="project-container">
+    <div className="project">
+      <div className="heading">Project</div>
+      <div className="project-container">
         {projects.map((project) => (
           <Project {...project} />
         ))}

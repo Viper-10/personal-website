@@ -1,9 +1,13 @@
+import { useState } from "react";
 import BarChart from "./components/BarChart/BarChart";
+import Toggle from "./Toggle/Toggle";
 
 const Languages = () => {
+  const [index, setIndex] = useState(0);
+
   return (
-    <div class="skills">
-      <div class="heading">Languages</div>
+    <div className="skills">
+      <div className="heading">Skills</div>
 
       {<BarChart />}
     </div>
