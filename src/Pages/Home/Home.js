@@ -1,17 +1,17 @@
-import About from "./Components/About/About";
-import SocialProfile from "./Components/Social Profile/SocialProfile";
-import Skills from "./Components/Skills/Skills";
-import Timeline from "./Components/Timeline/Timeline";
-import Projects from "./Components/Projects/Projects";
-import Languages from "./Components/Languages/Languages";
+import { About } from "./Components/About/";
+import { SocialProfile } from "./Components/Social Profile/";
+import { Timeline } from "./Components/Timeline/";
+import { Projects } from "./Components/Projects/";
+import { Skills } from "./Components/Languages/";
+import { TechStack } from "./Components/TechStack/";
 const Home = () => {
   return (
     <>
       <About />
       <Timeline />
       <Projects />
+      <TechStack />
       <Skills />
-      <Languages />
       <SocialProfile />
     </>
   );
