@@ -8,7 +8,7 @@ const Projects = () => {
       <div className="heading">Project</div>
       <div className="project-container">
         {projects.map((project) => (
-          <Project {...project} />
+          <Project key={project.name} {...project} />
         ))}
       </div>
     </div>

@@ -7,42 +7,19 @@ import {
   Tooltip,
   BarElement,
 } from "chart.js";
-
+import { backgroundColors, borderColors } from "../..";
+import skills from "../../skills.json";
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
 
 const BarChart = () => {
   const data = {
-    labels: [
-      "C++",
-      "Java",
-      "Spring,Jax-rs",
-      "Javascript",
-      "React js",
-      "HTML,CSS",
-      "SQL",
-    ],
+    labels: skills.map(({ name }) => name),
     datasets: [
       {
         label: "Languages and Frameworks",
-        data: [80, 90, 75, 90, 90, 95, 75],
-        backgroundColor: [
-          "rgba(255, 99, 132, 0.2)",
-          "rgba(255, 159, 64, 0.2)",
-          "rgba(255, 205, 86, 0.2)",
-          "rgba(75, 192, 192, 0.2)",
-          "rgba(54, 162, 235, 0.2)",
-          "rgba(153, 102, 255, 0.2)",
-          "rgba(201, 203, 207, 0.2)",
-        ],
-        borderColor: [
-          "rgb(255, 99, 132)",
-          "rgb(255, 159, 64)",
-          "rgb(255, 205, 86)",
-          "rgb(75, 192, 192)",
-          "rgb(54, 162, 235)",
-          "rgb(153, 102, 255)",
-          "rgb(201, 203, 207)",
-        ],
+        data: skills.map(({ percent }) => percent),
+        backgroundColor: backgroundColors.map((color) => color),
+        borderColor: borderColors.map((color) => color),
         borderWidth: 1,
         barThickness: 35,
       },
@@ -50,7 +27,6 @@ const BarChart = () => {
   };
 
   const options = {
-    scaleFontColor: "red",
     plugins: {
       legend: {
         display: false,
