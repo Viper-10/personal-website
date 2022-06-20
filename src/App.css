@@ -47,11 +47,8 @@
   margin-bottom: 1rem;
   font-size: 3rem;
   font-family: "Lobster", cursive;
-  letter-spacing: 0.25rem;
-  /* font-family: "Ink Free", "Roboto Mono", Times, serif; */
-  background: -webkit-linear-gradient(#c59014 60%, rgb(69, 69, 1));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: "Ink Free", "Roboto Mono", Times, serif;
+  color: var(--primary-yellow-color);
 }
 
 ::-webkit-scrollbar {

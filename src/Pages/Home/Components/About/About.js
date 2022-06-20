@@ -2,7 +2,7 @@ import "./style.css";
 const About = () => {
   return (
     <div className="about">
-      <h1 className="my-name">Hey! I'm Priyadharshan</h1>
+      <h1 className="heading">Hey! I'm Priyadharshan</h1>
       <p className="description">
         I'm a web developer based in India. Experienced in React js, Typescript.
         Worked with Spring boot, hibernate and Jax-rs for backend development.I
