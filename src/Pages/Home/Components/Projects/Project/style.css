@@ -1,0 +1,41 @@
+.accordion__item {
+  margin-bottom: 4px;
+}
+.accordion__button {
+  background-color: #17202f;
+  /* background-color: #1f2937; */
+  color: white;
+  border-radius: 4px;
+}
+.accordion__button:hover {
+  background-color: #17202f;
+  opacity: 0.9;
+}
+.accordion__panel {
+  /* background-color: #17202f; */
+  background-color: #17202f;
+}
+.cyan-on-hover {
+  color: white;
+}
+.cyan-on-hover:hover {
+  color: rgb(7, 173, 126);
+}
+
+.cyan-on-hover:hover + .cyan-on-hover {
+  color: rgb(7, 173, 126);
+}
+.accordion-panel-content {
+  padding: 1rem 2rem;
+  background-color: #1f2937;
+  border-radius: 8px;
+}
+.accordion-panel-heading {
+  font-size: 16px;
+  color: #9ca3af;
+  background-color: #1f2937;
+}
+.accordion-panel-text {
+  background-color: #1f2937;
+  font-size: 20px;
+}

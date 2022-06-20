@@ -1,10 +1,42 @@
-const Project = ({ name, link, description }) => {
+import {
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from "react-accessible-accordion";
+import "react-accessible-accordion/dist/fancy-example.css";
+import "./style.css";
+import { ArrowDiagonalSvg } from "..";
+
+const Project = ({ name, link, description, category, stack }) => {
   return (
-    <div className="project-item">
-      <div>{name}</div>
-      <a href={link}>TODO: Put up the arrow diagonal svg here</a>
-      <div>{description}</div>
-    </div>
+    <AccordionItem key={name} uuid={name}>
+      <AccordionItemHeading>
+        <AccordionItemButton>
+          <span className="cyan-on-hover" onClick={() => window.open(link)}>
+            {name + " - " + category}
+          </span>
+          <ArrowDiagonalSvg
+            width="24px"
+            height="24px"
+            color="black"
+            className="cyan-on-hover"
+          />
+        </AccordionItemButton>
+      </AccordionItemHeading>
+      <AccordionItemPanel>
+        <div>
+          <div className="accordion-panel-content">
+            <div className="accordion-panel-heading">Description</div>
+            <p className="accordion-panel-text">{description}</p>
+          </div>
+          <div className="accordion-panel-content">
+            <div className="accordion-panel-heading">Tech Stack</div>
+            <p className="accordion-panel-text">{stack}</p>
+          </div>
+        </div>
+      </AccordionItemPanel>
+    </AccordionItem>
   );
 };
 

@@ -1,12 +1,16 @@
 [
   {
     "name": "QuoteAway",
+    "category": "Full stack web application",
     "link": "https://quoteaway.herokuapp.com/#/",
-    "description": "A web application that allows users to create and share quotes.Built using React js and Spring boot. Uses MySQL as the database and is deployed on Heroku"
+    "description": "QuoteAway is a social media website where users to share and see other people's quotes. Uses Http basic authentication for login logout using spring security. Any logged in user can see other peoples quotes and create their own.",
+    "stack": "React, Spring boot, MySQL, Spring data JPA"
   },
   {
     "name": "Bank Application",
-    "link": "TODO:",
-    "description": "A web application that imitates bank operations such as deposit, withdraw, transfer and balance enquiry, fixed deposit and loans. Involes multithreading concepts and built using Jax-rs primarily and Angular."
+    "category": "Backend web application",
+    "link": "https://github.com/Viper-10/Bank-application",
+    "description": "A web application that imitates bank operations such as deposit, withdraw, transfer and balance enquiry, fixed deposit and loans. Involves multi threading concepts for EMI payment and interest calculation.",
+    "stack": "Jax-rs, Angular, MySQL, JDBC"
   }
 ]
