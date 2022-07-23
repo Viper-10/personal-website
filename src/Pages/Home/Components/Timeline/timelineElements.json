@@ -4,7 +4,7 @@
     "title": "Summer Intern",
     "workplace": "Zoho Corporation",
     "location": "- Erode, Tamil Nadu",
-    "description": "Built a full stack bank application web app using Jax-rs and Angular including OOPS and Multi-threading",
+    "description": "Built a full stack bank application web app using Jax-rs and Angular including OOPS and Multi-threading.",
     "date": "May 2022 - June 2022",
     "type": "work"
   },
@@ -13,8 +13,14 @@
     "title": "Frontend Developer",
     "workplace": "Janus Softwares",
     "location": "- Thane, Maharashtra",
-    "description": "Contributed towards building the UI/UX of a Defi Web3 application using React js and Typescript. Collaborated with developers and team outside India to build the application.",
     "date": "March 2022 - June 2022",
+    "bulletpoints": [
+      "Worked on a DeFi web3 finance website.",
+      "Created responsive and reusable components.",
+      "Fixed 70+ bugs and improved the performance of the website.",
+      "Developed 4 features that are actively used on the website.",
+      "Included libraries such as charts.js, ether.js, chakra-ui."
+    ],
     "type": "work"
   },
   {
@@ -22,7 +28,7 @@
     "title": "BE Computer Science",
     "workplace": "Kumaraguru College of Technology",
     "location": "- Coimbatore, Tamil Nadu",
-    "description": "Currently Pursuing 3rd year of BE CSE with a CGPA of 9.5 out of 10. Innovation Coordinator of DA CSE(2020-2021). Winner of CODEFIESTA(2020)",
+    "description": "At present in my 4th year with a CGPA of 9.38 out of 10.",
     "date": "September 2019",
     "type": "school"
   },
@@ -31,7 +37,6 @@
     "title": "12th Grade",
     "workplace": "Amrita Vidyalayam",
     "location": "Coimbatore, Tamil Nadu",
-    "description": "Completed my 12th grade with 66% in the CBSE",
     "date": "June 2018 - March 2019",
     "type": "school"
   },
@@ -40,7 +45,6 @@
     "title": "10th Grade",
     "workplace": "Amrita Vidyalayam",
     "location": "Coimbatore, Tamil Nadu",
-    "description": "Completed my 10th grade with 10/10 GPA in the CBSE",
     "date": "June 2016 - March 2017",
     "type": "school"
   }

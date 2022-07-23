@@ -17,8 +17,8 @@ const Project = ({ name, link, description, category, stack }) => {
             {name + " - " + category}
           </span>
           <ArrowDiagonalSvg
-            width="24px"
-            height="24px"
+            width="20px"
+            height="20px"
             color="black"
             className="cyan-on-hover"
           />

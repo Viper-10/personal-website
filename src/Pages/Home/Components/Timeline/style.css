@@ -1,8 +1,25 @@
 .vertical-timeline-element-title,
 .vertical-timeline-element-subtitle,
 .vertical-timeline-element-description {
-  color: black;
+  color: #ddd;
+  background-color: #1e1e1e;
+}
+.vertical-timeline-element-content-arrow {
+  border-inline-end-color: #1e1e1e;
 }
 .vertical-timeline-element-content {
-  background-color: #e9e9e9;
+  background-color: #1e1e1e;
+  box-shadow: 2px 2px 6px 0px black;
+}
+
+.bullet-point-list {
+  color: white;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.25rem;
+}
+.bullet-point {
+  list-style-type: circle;
+  font-size: 0.9rem;
+  font-weight: 500;
 }

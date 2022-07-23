@@ -26,9 +26,18 @@ const Timeline = () => {
           {element.workplace}
           {` ${element.location}`}
         </h5>
-        <p className="vertical-timeline-element-description">
-          {element.description}
-        </p>
+        {element.description && (
+          <p className="vertical-timeline-element-description">
+            {element.description}
+          </p>
+        )}
+        {element.bulletpoints && (
+          <ul className="bullet-point-list">
+            {element.bulletpoints.map((bulletpoint) => (
+              <li className="bullet-point">{bulletpoint}</li>
+            ))}
+          </ul>
+        )}
       </VerticalTimelineElement>
     );
   });

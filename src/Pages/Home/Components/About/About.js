@@ -10,7 +10,7 @@ const About = () => {
       </p>
       <br />
       <p className="description">
-        I love esports and an avid follower of AoE 2 franchise
+        I love esports and an avid follower of AoE 2 franchise.
       </p>
     </div>
   );

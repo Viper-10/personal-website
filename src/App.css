@@ -48,19 +48,17 @@
   font-size: 3rem;
   font-family: "Lobster", cursive;
   font-family: "Ink Free", "Roboto Mono", Times, serif;
-  color: var(--primary-yellow-color);
+  color: #ffc234;
 }
 
 ::-webkit-scrollbar {
   width: 8px;
-  border-radius: 9999px;
 }
 ::-webkit-scrollbar-track {
-  background-color: var(--primary-green-color);
+  background: #555;
 }
 ::-webkit-scrollbar-thumb {
-  border-radius: 9999px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background: #222;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
