@@ -2,28 +2,28 @@
   margin-bottom: 4px;
 }
 .accordion__button {
-  background-color: black;
+  background-color: var(--primary-dark-color);
   color: white;
   border-radius: 4px;
   transition: background-color 0.3s ease-in-out;
 }
 .accordion__button:hover {
-  background-color: rgb(19, 18, 18);
+  background-color: var(--secondary-dark-color);
 }
 .accordion__panel {
-  background-color: black;
+  background-color: var(--primary-dark-color);
 }
 .accordion-panel-content {
   padding: 1rem 2rem;
-  background-color: rgb(19, 18, 18);
+  background-color: var(--secondary-dark-color);
 }
 .accordion-panel-heading {
   font-size: 16px;
   color: #9ca3af;
-  background-color: rgb(19, 18, 18);
+  background-color: var(--secondary-dark-color);
 }
 .accordion-panel-text {
-  background-color: rgb(19, 18, 18);
+  background-color: var(--secondary-dark-color);
   font-size: 20px;
 }
 .cyan-on-hover {

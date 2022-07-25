@@ -27,7 +27,7 @@ const Languages = () => {
             <BarChartSvg
               height="24px"
               width="24px"
-              color={index === 0 ? "rgb(7, 173, 126)" : "#fff"}
+              color={index === 0 ? "#4dfed1" : "#fff"}
             />
           </div>
           <div
@@ -38,7 +38,7 @@ const Languages = () => {
             <ProgressBarSvg
               height="24px"
               width="24px"
-              color={index === 1 ? "rgb(7, 173, 126)" : "#fff"}
+              color={index === 1 ? "#4dfed1" : "#fff"}
             />
           </div>
         </div>

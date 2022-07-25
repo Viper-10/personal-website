@@ -2,13 +2,13 @@
 .vertical-timeline-element-subtitle,
 .vertical-timeline-element-description {
   color: #ddd;
-  background-color: #1e1e1e;
+  background-color: var(--primary-dark-color);
 }
 .vertical-timeline-element-content-arrow {
-  border-inline-end-color: #1e1e1e;
+  border-inline-end-color: var(--primary-dark-color);
 }
 .vertical-timeline-element-content {
-  background-color: #1e1e1e;
+  background-color: var(--primary-dark-color);
   box-shadow: 2px 2px 6px 0px black;
 }
 

@@ -6,12 +6,13 @@
   text-decoration: none;
 }
 :root {
-  --primary-green-color: rgb(7, 151, 110);
-  --secondary-yellow-color: #fdcf62;
+  --primary-dark-color: rgb(26, 25, 25);
+  --secondary-dark-color: #1e1e1e;
   --primary-yellow-color: #ffc234;
-  --primary-pink-color: #f865d3;
-  --secondary-white-color: #f1f1f1;
+  --secondary-yellow-color: #fdcf62;
+  --primary-green-color: #4dfed1;
   --dark-white: #ccc;
+  --secondary-white-color: #f1f1f1;
 }
 
 /*Utility classes*/
@@ -58,7 +59,7 @@
   background: #555;
 }
 ::-webkit-scrollbar-thumb {
-  background: #222;
+  background: var(--primary-dark-color);
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #555;

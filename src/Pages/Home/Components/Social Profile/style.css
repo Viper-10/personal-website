@@ -2,19 +2,18 @@ i.fab,
 i.fa {
   display: inline-block;
   border-radius: 60px;
-  box-shadow: 2px 2px 4px #888;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--primary-dark-color);
   color: #ccc;
+  transition: ease-in 0.2s;
   padding: 0.3em 0.4em;
   /* padding : 0.5em  0.6em is the default value*/
 }
 @media (min-width: 768px) {
   i.fa:hover,
   i.fab:hover {
-    background-color: #111;
+    background-color: var(--primary-dark-color);
     color: var(--primary-yellow-color);
-    transition: ease-in 0.2s;
-    opacity: 0.8;
+    transform: scale(0.9);
     cursor: pointer;
   }
 

@@ -14,7 +14,8 @@ const Project = ({ name, link, description, category, stack }) => {
       <AccordionItemHeading>
         <AccordionItemButton>
           <span className="cyan-on-hover" onClick={() => window.open(link)}>
-            {name + " - " + category}
+            {name}
+            {category && `- ${category}`}
           </span>
           <ArrowDiagonalSvg
             width="20px"

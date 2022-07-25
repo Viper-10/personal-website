@@ -6,7 +6,7 @@ export function getIcon(title) {
   const style = {
     height: "100px",
     width: "200px",
-    color: "#fff",
+    color: "#4dfed1",
   };
 
   switch (title) {
