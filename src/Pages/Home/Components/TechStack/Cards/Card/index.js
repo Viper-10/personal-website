@@ -1,7 +1,7 @@
 import { ReactComponent as GithubLogo } from "../../../../../../assets/images/github.svg";
 import { ReactComponent as ReactLogo } from "../../../../../../assets/images/react.svg";
 import { ReactComponent as JavaLogo } from "../../../../../../assets/images/java.svg";
-
+import "./style.css";
 export function getIcon(title) {
   const style = {
     height: "100px",
@@ -11,11 +11,11 @@ export function getIcon(title) {
 
   switch (title) {
     case "Frontend":
-      return <ReactLogo {...style} />;
+      return <ReactLogo {...style} className="glow" />;
     case "Backend":
-      return <JavaLogo {...style} />;
+      return <JavaLogo {...style} className="glow" />;
     case "Github":
-      return <GithubLogo {...style} />;
+      return <GithubLogo {...style} className="glow" />;
     default:
       return null;
   }

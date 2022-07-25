@@ -4,7 +4,7 @@ i.fa {
   border-radius: 60px;
   background-color: var(--primary-dark-color);
   color: #ccc;
-  transition: ease-in 0.2s;
+  transition: ease-in 0.1s;
   padding: 0.3em 0.4em;
   /* padding : 0.5em  0.6em is the default value*/
 }
@@ -12,8 +12,8 @@ i.fa {
   i.fa:hover,
   i.fab:hover {
     background-color: var(--primary-dark-color);
-    color: var(--primary-yellow-color);
-    transform: scale(0.9);
+    color: var(--primary-green-color);
+    transform: scale(0.95);
     cursor: pointer;
   }
 

@@ -11,7 +11,7 @@
   padding-bottom: 10px;
   font-weight: bold;
   border-bottom: 2px solid rgba(255, 255, 255, 1);
-  color: var(--primary-green-color);
+  color: white;
 }
 .card-description {
   font-size: 20px;
@@ -20,4 +20,22 @@
   line-height: 1.4em;
   margin-block: 1rem;
   font-weight: bold;
+}
+
+.glow {
+  animation: glow 4s infinite cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+@keyframes glow {
+  0% {
+    color: white;
+  }
+
+  50% {
+    color: #0df9be;
+  }
+
+  100% {
+    color: white;
+  }
 }

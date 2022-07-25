@@ -5,6 +5,9 @@
   list-style: none;
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --primary-dark-color: rgb(26, 25, 25);
   --secondary-dark-color: #1e1e1e;
@@ -34,6 +37,7 @@
   width: min(1200px, 90%);
   margin: auto;
   position: relative;
+  top: 60px;
 }
 .context {
   width: 100%;
@@ -60,6 +64,7 @@
 }
 ::-webkit-scrollbar-thumb {
   background: var(--primary-dark-color);
+  border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
