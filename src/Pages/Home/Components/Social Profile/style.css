@@ -36,7 +36,9 @@ i.fab:active {
   margin-top: 6rem;
   top: 0%;
 }
+#hover-icon {
+  transition: transform 0.25s ease-in;
+}
 .rotate-45 {
-  transition: transform 1s ease-in;
   transform: rotate(45deg);
 }

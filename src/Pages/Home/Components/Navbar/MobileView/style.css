@@ -1,0 +1,9 @@
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-nav-container {
+  width: min(1200px, 90%);
+  margin-inline: auto;
+}
