@@ -7,7 +7,7 @@
 .toggle {
   display: flex;
   gap: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 100px;
   margin-bottom: 1rem;
   border: 1px solid rgb(159, 142, 142);
   padding: 0.25rem;

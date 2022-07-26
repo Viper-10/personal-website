@@ -5,7 +5,7 @@ import "./style.css";
 
 const Projects = () => {
   return (
-    <div className="project">
+    <div className="project" id="projects">
       <div className="heading">Project</div>
       <Accordion allowZeroExpanded preExpanded={["QuoteAway"]}>
         {projects.map((project) => (

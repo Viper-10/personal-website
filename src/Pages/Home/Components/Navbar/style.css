@@ -15,7 +15,6 @@
 .nav-items {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .nav-item,
@@ -24,10 +23,14 @@
   color: white;
 }
 
-.nav-item:hover,
 .logo:hover {
+  cursor: pointer;
+  border-bottom: 3px solid var(--primary-green-color);
+}
+
+.nav-item:hover {
   color: var(--primary-green-color);
-  border-bottom: 1px solid var(--primary-dark-color);
+  border-bottom: 3px solid var(--primary-dark-color);
 }
 
 .logo {

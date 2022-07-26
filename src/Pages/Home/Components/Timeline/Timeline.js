@@ -42,7 +42,7 @@ const Timeline = () => {
     );
   });
   return (
-    <div>
+    <div id="timeline">
       <h1 className="heading">Timeline</h1>
       <VerticalTimeline>{timeline}</VerticalTimeline>
     </div>

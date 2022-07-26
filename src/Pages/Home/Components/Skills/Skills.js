@@ -15,7 +15,7 @@ const Languages = () => {
   };
 
   return (
-    <div className="skills">
+    <div className="skills" id="skills">
       <div className="skills-header">
         <div className="heading">Skills</div>
         <div className="toggle">

@@ -1,7 +1,7 @@
 import "./style.css";
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <h1 className="heading">Hey! I'm Priyadharshan</h1>
       <p className="description">
         I'm a web developer based in India. Experienced in React js, Typescript.

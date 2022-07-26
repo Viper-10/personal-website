@@ -8,7 +8,6 @@ const Navbar = () => {
 
       if (window.scrollY < 36) {
         navbar.style.backgroundColor = "transparent";
-
         for (let i = 0; i < navItems.length; i++) {
           navItems[i].classList.add("black-on-hover");
           navItems[i].style.borderBottomColor = "black";
@@ -27,30 +26,32 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="logo">PRIYADHARSHAN</div>
+        <div className="logo" onClick={() => window.scrollTo(0, 0)}>
+          PRIYADHARSHAN
+        </div>
         <ul className="nav-items">
           <li className="nav-item">
-            <a href="#" className="link">
+            <a href="#about" className="link">
               About
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="link">
+            <a href="#timeline" className="link">
               Timeline
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="link">
+            <a href="#projects" className="link">
               Projects
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="link">
+            <a href="#TechStack" className="link">
               Stack
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="link">
+            <a href="#skills" className="link">
               Skills
             </a>
           </li>
