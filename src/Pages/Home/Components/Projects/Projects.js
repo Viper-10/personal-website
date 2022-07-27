@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div className="project" id="projects">
       <div className="heading">Project</div>
-      <Accordion allowZeroExpanded preExpanded={["QuoteAway"]}>
+      <Accordion allowZeroExpanded preExpanded={[projects[0].link]}>
         {projects.map((project) => (
           <Project key={project.name} {...project} />
         ))}

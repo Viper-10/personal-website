@@ -4,7 +4,7 @@
   margin-bottom: 20px;
   text-align: center;
   padding: 1.5rem;
-  box-shadow: 4px 6px 0px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 4px 0px 0px rgba(0, 0, 0, 0.8);
 }
 .card-title {
   font-style: italic;
@@ -32,7 +32,7 @@
   }
 
   50% {
-    color: #0df9be;
+    color: #33f3c3;
   }
 
   100% {

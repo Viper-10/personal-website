@@ -3,7 +3,7 @@ import Home from "./Pages/Home/Home";
 import "./App.css";
 import Navbar from "./Pages/Home/Components/Navbar/Navbar.js";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <div className="context">
@@ -15,6 +15,6 @@ function App() {
       <BackgroundAnimation />
     </div>
   );
-}
+};
 
 export default App;

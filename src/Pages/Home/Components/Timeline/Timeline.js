@@ -33,8 +33,10 @@ const Timeline = () => {
         )}
         {element.bulletpoints && (
           <ul className="bullet-point-list">
-            {element.bulletpoints.map((bulletpoint) => (
-              <li className="bullet-point">{bulletpoint}</li>
+            {element.bulletpoints.map((bulletpoint, index) => (
+              <li className="bullet-point" key={index}>
+                {bulletpoint}
+              </li>
             ))}
           </ul>
         )}

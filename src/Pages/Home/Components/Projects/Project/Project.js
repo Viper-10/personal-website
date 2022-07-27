@@ -10,7 +10,7 @@ import { ArrowDiagonalSvg } from "..";
 
 const Project = ({ name, link, description, category, stack }) => {
   return (
-    <AccordionItem key={name} uuid={name}>
+    <AccordionItem key={name} uuid={link}>
       <AccordionItemHeading>
         <AccordionItemButton>
           <span className="cyan-on-hover" onClick={() => window.open(link)}>

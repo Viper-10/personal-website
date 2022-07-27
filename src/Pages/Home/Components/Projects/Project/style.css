@@ -6,10 +6,34 @@
   color: white;
   border-radius: 4px;
   transition: background-color 0.3s ease-in-out;
+  -webkit-tap-highlight-color: transparent;
 }
-.accordion__button:hover {
+.accordion__item *:hover,
+.accordion__item *:focus,
+.accordion__item *:active {
+  background-color: none;
+}
+@media (min-width: 1024px) {
+  .accordion__button:hover {
+    background-color: var(--secondary-dark-color);
+  }
+  .cyan-on-hover:hover {
+    color: rgb(21, 247, 183);
+  }
+  .cyan-on-hover:hover + .cyan-on-hover {
+    color: rgb(21, 247, 183);
+  }
+}
+.accordion__button:active {
   background-color: var(--secondary-dark-color);
 }
+.cyan-on-hover:active {
+  color: rgb(21, 247, 183);
+}
+.cyan-on-hover:active + .cyan-on-hover {
+  color: rgb(21, 247, 183);
+}
+
 .accordion__panel {
   background-color: var(--primary-dark-color);
 }
@@ -30,11 +54,4 @@
   color: white;
   font-weight: 500;
   font-style: italic;
-}
-.cyan-on-hover:hover {
-  color: rgb(21, 247, 183);
-}
-
-.cyan-on-hover:hover + .cyan-on-hover {
-  color: rgb(21, 247, 183);
 }

@@ -48,14 +48,13 @@ html {
 }
 
 .heading {
-  padding-top: 100px;
+  padding-top: 75px;
   margin-bottom: 1rem;
   font-size: 3rem;
   font-family: "Lobster", cursive;
   font-family: "Ink Free", "Roboto Mono", Times, serif;
   color: #ffc234;
 }
-
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -76,5 +75,10 @@ html {
 
   .heading {
     font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .heading {
+    padding-top: 10px;
   }
 }

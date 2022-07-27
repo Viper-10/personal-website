@@ -4,7 +4,7 @@ import LaptopView from "./LaptopView";
 import MobileView from "./MobileView";
 
 const Navbar = () => {
-  const isMobile = useMediaQuery("800");
+  const isMobile = useMediaQuery("600");
 
   return isMobile ? <MobileView /> : <LaptopView />;
 };
