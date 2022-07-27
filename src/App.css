@@ -77,8 +77,3 @@ html {
     font-size: 2rem;
   }
 }
-@media (max-width: 600px) {
-  .heading {
-    padding-top: 10px;
-  }
-}

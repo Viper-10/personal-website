@@ -23,8 +23,3 @@
   cursor: pointer;
   opacity: 0.7;
 }
-@media (max-width: 600px) {
-  .toggle {
-    margin-top: 10px;
-  }
-}
