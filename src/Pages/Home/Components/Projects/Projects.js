@@ -1,7 +1,6 @@
 import { Accordion } from "react-accessible-accordion";
 import Project from "./Project/Project";
 import projects from "./projects.json";
-import "./style.css";
 
 const Projects = () => {
   return (

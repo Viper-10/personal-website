@@ -24,7 +24,7 @@ i.fa {
 }
 i.fa:active,
 i.fab:active {
-  color: var(--primary-yellow-color);
+  color: var(--primary-green-color);
   opacity: 0.8;
 }
 
@@ -36,8 +36,9 @@ i.fab:active {
   margin-top: 6rem;
   top: 0%;
 }
-#hover-icon {
-  transition: transform 0.25s ease-in;
+.fa.fa-plus:active {
+  transform: scale(0.95);
+  color: var(--primary-green-color);
 }
 .rotate-45 {
   transform: rotate(45deg);

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BarChartSvg, ProgressBarSvg, BarChart } from ".";
 import "./style.css";
 import ProgressBars from "./components/ProgressBars/ProgressBars";
+import { useMediaQuery } from "./../../../../hooks/useMediaQuery";
 
 const Languages = () => {
   const [index, setIndex] = useState(0);
@@ -24,7 +25,7 @@ const Languages = () => {
             style={index === 0 ? activeStyle : inactiveStyle}
             onClick={() => setIndex(0)}
           >
-            <BarChartSvg
+            <ProgressBarSvg
               height="24px"
               width="24px"
               color={index === 0 ? "#4dfed1" : "#fff"}
@@ -35,7 +36,7 @@ const Languages = () => {
             style={index === 1 ? activeStyle : inactiveStyle}
             onClick={() => setIndex(1)}
           >
-            <ProgressBarSvg
+            <BarChartSvg
               height="24px"
               width="24px"
               color={index === 1 ? "#4dfed1" : "#fff"}
@@ -43,7 +44,7 @@ const Languages = () => {
           </div>
         </div>
       </div>
-      {index === 0 ? <BarChart /> : <ProgressBars />}
+      {index === 1 ? <BarChart /> : <ProgressBars />}
     </div>
   );
 };

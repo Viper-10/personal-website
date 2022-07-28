@@ -27,12 +27,9 @@
     font-size: 1rem;
   }
 
-  .about p {
+  .description {
     font-weight: 600;
   }
-}
-
-@media (max-width: 769px) {
   .my-name {
     font-size: 2rem;
   }

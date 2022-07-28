@@ -15,12 +15,9 @@
 }
 @media (min-width: 1024px) {
   .accordion__button:hover {
-    background-color: var(--secondary-dark-color);
+    background-color: rgba(38, 36, 36);
   }
   .cyan-on-hover:hover {
-    color: rgb(21, 247, 183);
-  }
-  .cyan-on-hover:hover + .cyan-on-hover {
     color: rgb(21, 247, 183);
   }
 }
