@@ -6,20 +6,11 @@ const LaptopView = () => {
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector(".navbar");
-      const navItems = document.getElementsByClassName("nav-item");
 
       if (window.scrollY < 36) {
         navbar.style.backgroundColor = "rgba(0,0,0,0.4)";
-        for (let i = 0; i < navItems.length; i++) {
-          navItems[i].classList.add("black-on-hover");
-          navItems[i].style.borderBottomColor = "black";
-        }
       } else {
         navbar.style.backgroundColor = "rgba(0,0,0,0.875)";
-        for (let i = 0; i < navItems.length; i++) {
-          navItems[i].style.borderBottomColor = "#4dfed1";
-          navItems[i].classList.remove("black-on-hover");
-        }
       }
     };
 

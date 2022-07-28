@@ -11,7 +11,7 @@ const MobileView = () => {
     window.addEventListener("click", handleOutsideClick);
 
     function handleOutsideClick(e) {
-      // TODO: complete this
+      // TODO: complete this and add transition to dropdown
     }
 
     function handleScroll() {

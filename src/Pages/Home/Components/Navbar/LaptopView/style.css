@@ -47,28 +47,22 @@
 }
 
 @media (min-width: 1024px) {
-  .black-on-hover:hover {
-    color: black;
-  }
   .logo:hover {
     cursor: pointer;
-    border-bottom: 3px solid var(--primary-green-color);
+    border-bottom: 1px solid var(--primary-green-color);
   }
   .nav-item:hover {
     color: var(--primary-green-color);
-    border-bottom: 3px solid var(--primary-dark-color);
+    border-bottom: 1px solid var(--primary-green-color);
   }
-}
-.black-on-hover:active {
-  color: black;
 }
 .logo:active {
   cursor: pointer;
-  border-bottom: 3px solid var(--primary-green-color);
+  border-bottom: 1px solid var(--primary-green-color);
 }
 .nav-item:active {
   color: var(--primary-green-color);
-  border-bottom: 3px solid var(--primary-dark-color);
+  border-bottom: 1px solid var(--primary-green-color);
 }
 
 @keyframes navbar-animation {
