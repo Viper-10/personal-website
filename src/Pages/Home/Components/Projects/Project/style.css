@@ -2,16 +2,14 @@
   margin-bottom: 4px;
 }
 .accordion__button {
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
   background-color: var(--primary-dark-color);
   color: white;
   border-radius: 4px;
   transition: background-color 0.3s ease-in-out;
   -webkit-tap-highlight-color: transparent;
-}
-.accordion__item *:hover,
-.accordion__item *:focus,
-.accordion__item *:active {
-  background-color: none;
 }
 @media (min-width: 1024px) {
   .accordion__button:hover {

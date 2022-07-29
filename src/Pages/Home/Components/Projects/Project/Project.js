@@ -4,7 +4,6 @@ import {
   AccordionItemButton,
   AccordionItemPanel,
 } from "react-accessible-accordion";
-import "react-accessible-accordion/dist/fancy-example.css";
 import "./style.css";
 import { ArrowDiagonalSvg } from "..";
 
@@ -13,7 +12,13 @@ const Project = ({ name, link, description, category, stack }) => {
     <AccordionItem key={name} uuid={link}>
       <AccordionItemHeading>
         <AccordionItemButton>
-          <span className="cyan-on-hover" onClick={() => window.open(link)}>
+          <span
+            className="cyan-on-hover"
+            onClick={(e) => {
+              window.open(link);
+              e.stopPropagation();
+            }}
+          >
             {name}
             {category && `- ${category}`}
             <ArrowDiagonalSvg width="24px" height="24px" />
