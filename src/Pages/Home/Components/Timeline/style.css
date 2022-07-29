@@ -4,6 +4,10 @@
   color: #ddd;
   background-color: var(--primary-dark-color);
 }
+.vertical-timeline-element-subtitle {
+  color: grey;
+  font-weight: 400;
+}
 .vertical-timeline-element-content-arrow {
   border-inline-end-color: var(--primary-dark-color);
 }
@@ -11,7 +15,9 @@
   background-color: var(--primary-dark-color);
   box-shadow: 2px 2px 6px 0px black;
 }
-
+.vertical-timeline-element-description {
+  font-weight: 300;
+}
 .bullet-point-list {
   color: white;
   margin-top: 0.5rem;
@@ -21,5 +27,5 @@
 .bullet-point {
   list-style-type: circle;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 400;
 }

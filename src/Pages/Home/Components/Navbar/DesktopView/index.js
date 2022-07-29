@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import "./style.css";
 import { navigationItems } from "../navigationItems";
 
-const LaptopView = () => {
+const DesktopView = () => {
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector(".navbar");
@@ -24,11 +24,9 @@ const LaptopView = () => {
         </div>
         <ul className="nav-items">
           {navigationItems.map((item) => (
-            <li className="nav-item" key={item.name}>
-              <a href={item.link} className="link">
-                {item.name}
-              </a>
-            </li>
+            <a key={item.name} href={item.link} className="nav-item link">
+              {item.name}
+            </a>
           ))}
         </ul>
       </div>
@@ -36,4 +34,4 @@ const LaptopView = () => {
   );
 };
 
-export default LaptopView;
+export default DesktopView;

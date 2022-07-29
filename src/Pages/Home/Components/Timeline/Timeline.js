@@ -22,10 +22,10 @@ const Timeline = () => {
         icon={isWorkIcon ? <WorkSvg /> : <SchoolSvg />}
       >
         <h3 className="vertical-timeline-element-title">{element.title}</h3>
-        <h5 className="vertical-timeline-element-subtitle">
+        <h6 className="vertical-timeline-element-subtitle">
           {element.workplace}
           {` ${element.location}`}
-        </h5>
+        </h6>
         {element.description && (
           <p className="vertical-timeline-element-description">
             {element.description}
